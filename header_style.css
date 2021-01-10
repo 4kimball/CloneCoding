@@ -7,83 +7,78 @@ a{
     text-decoration: none;
     color:#fff;
 }
-
-header nav {
+header{
     display:flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    background-color: #006666;
+    background-color: #000066;
     padding:8px 12px;
-    
 }
 
-header nav .logo_box{
+header .main_logo{
     font-size:24px;
+    font-weight:600;
     color:#fff;
-    font-weight: 600;
 }
 
-header nav .logo_box i{
-    color:#ff9933;
+header .main_logo i{
+    color:#ff3300;
 }
 
-header nav .menu{
+header .menu{
     display:flex;
     list-style: none;
-    padding-left:0;
+    padding-left:0px;
 }
-
-header nav .menu li{
+header .menu li{
     padding:8px 12px;
-    font-weight: 600;
-    
+    font-size:18px;
 }
 
-header nav .menu li:hover{
-    background:#ff9933;
+header .menu li:hover{
+    background: #ff3300;
     border-radius: 5px;
 }
-header nav .icons{
-    color:#fff;
-    list-style: none;
-    display:flex;
-    padding-left:0;
-}
 
-header nav .icons i{
+header .icons{
+    display:flex;
+    list-style: none;
+    color:#fff;
+    padding-left:0px;
+}
+header .icons i{
+    font-size:18px;
     padding:8px 12px;
 }
-
-header nav .moreBtn{
+header .moreBtn{
     display:none;
+    color:#ff3300;
     font-size:24px;
     position:absolute;
     right:32px;
-    color:#ff9933;
 }
 
 @media screen and (max-width:768px){
-    header nav{
+    header{
         flex-direction: column;
-        align-items:flex-start;
-        padding:8px 24px;
+        align-items: flex-start;
+        padding:8px 12px;
     }
-    header nav .menu{
-        flex-direction:column;
-        align-items:center;
+
+    header .menu{
+        flex-direction: column;
         width:100%;
+        align-items: center;
     }
-    header nav .menu li{
+    header .menu li{
         width:100%;
         text-align: center;
     }
-
-    header nav .icons{
-        justify-content: center;
+    header .icons{
         width:100%;
+        justify-content: center;
     }
-
-    header nav .moreBtn{
+    header .moreBtn{
         display:block;
     }
 }
